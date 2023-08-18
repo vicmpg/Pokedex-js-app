@@ -1,0 +1,43 @@
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: lightgrey;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+  
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+  
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+div {
+    padding: 10px; /* Adds a 10px inner spacing to all sides*/
+    margin: 10px; /* Adds a 10px outer spacing to all sides*/
+    border: 1px solid black; /* Attributes describe: thickness, type, color*/
+}
+
+.header__title {
+    /* No spacing to top and bottom and auto-spacing to left and right, which centers the container horizontally*/
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid__item {
+    background-color: lightgray;
+}
