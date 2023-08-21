@@ -10,34 +10,24 @@ h1 {
     font-size: 30px;
     font-weight: 700;
 }
-  
-h2 {
-    font-size: 24px;
-    font-weight: 700;
-}
-  
-h3 {
-    font-size: 18px;
-    font-weight: 700;
-}
 
-div {
-    padding: 10px; /* Adds a 10px inner spacing to all sides*/
-    margin: 10px; /* Adds a 10px outer spacing to all sides*/
-    border: 1px solid black; /* Attributes describe: thickness, type, color*/
+.js {
+    color:black;
+    text-align: center;
 }
-
-.header__title {
-    /* No spacing to top and bottom and auto-spacing to left and right, which centers the container horizontally*/
-    margin: 0 auto;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-}
-
-.grid__item {
-    background-color: lightgray;
+.button-class{
+    background-color: darksalmon;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: aliceblue;
+    color:black;
+    border: 2px solid darksalmon;
 }
