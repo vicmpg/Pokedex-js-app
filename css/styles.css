@@ -1,11 +1,15 @@
-:root {
-    --primary-color: lightBlue;
-    --font-weight-body: 400;
-    --font-size-body: 16px;
-    --font-weight-headings: 700;
-    --cursor-style: pointer;
+body {
+   font-family: 'Chakra Petch', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.6;
+   background-color: lightgrey;
 }
- 
+
+h1 {
+   font-size: 30px;
+   font-weight: 700;
+}
 * {
   box-sizing: border-box;
   /* forces the padding and border to be included in the final
@@ -16,7 +20,7 @@
  
 .pokemon-button {
    border: 1px solid blue;
-   background-color: lightBlue;
+   background-color: white;
    min-width: 100px;
    min-height: 50px;
    cursor: var(--cursor-style);
