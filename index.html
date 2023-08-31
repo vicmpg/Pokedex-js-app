@@ -2,24 +2,113 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/pokemon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- style links -->
+
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Pokédex App</title>
+    <title>Pokédex Web App</title>
   </head>
 
   <body>
-    <h1>Pokédex</h1>
-    <ul class="pokemon-list"></ul>
-    <div id="modal-container">
+    <div id="page-container">
+      <div id="content-wrap">
+
+        <!-- nav bar section -->
+
+        <header>
+          <nav class="navbar">
+            <a class="navbar-brand" href="index.html" >
+              <img src="img/pokedex.png" alt="logo" class="center">
+            </a>
+
+            <div class="social-media">
+            <a href="https://www.linkedin.com/in/victor-pena-884190237/"><img
+              src="img/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/vicmpg?tab=repositories"><img
+              src="img/github.png" alt="github"></a>
+            <a href="https://github.com/vicmpg/portfolio-website.git"><img
+              src="img/portfolio.png" alt="portfolio"></a>
+            </div>
+
+            <form class="form-inline">
+              <input class="form-control rounded" id="myInput" type="search"
+              placeholder="Search" aria-label="Search"/>
+            </form>
+
+            <div class="sr-only">Navigation bar</div>
+          </nav>
+        </header>
+
+        <!-- pokémon section -->
+
+        <main>
+
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="row list-group list-unstyled flex-row flex-wrap justify-content-center"
+                data-toggle="modal" data-target="#pokemonModal"></div>
+                <div class="sr-only">This is the Pokémon list</div>
+                <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog just-content: center" role="document">
+                    <div class="sr-only">These are the details about the Pokémon</div>
+                    <div class="modal-content text-center font-weight-bold">
+                      <div class="modal-header text-left">
+                        <h5 class="col-12 modal-title text-capitalize" id="exampleModalLabel"></h5>
+                      </div>
+                      <div class="modal-body text-capitalize">Loading Content...</div>
+                      <div>
+                        <button type="button" class="btn btn-close float-right m-1"
+                        data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </main>
+
+        <!-- footer section -->
+
+        <footer id="footer" class="fixed-bottom text-center text-light text-lg-start">
+          <div class="text-center p-3">
+            This Web App was built by
+            <a href="https://vicmpg.github.io/portfolio-website/index.html"><img
+              src="img/VictorPenaLogo.png" alt="portfolio-logo"></a>
+          </div>
+          <div class="sr-only">Footer with a link to the Developer's portfolio</div>
+        </footer>
+
+        <!-- scripts -->
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+        <script src="js/scripts.js"></script>
+        <script src="js/promise-polyfill.js"></script>
+        <script src="js/fetch-polyfill.js"></script>
+        <script src="js/tota11y.min.js"></script>
+      </div>
     </div>
-
-    <script src="js/promise-polyfill.js"></script>
-    <script src="js/fetch-polyfill.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/tota11y.min.js"></script>
   </body>
-
 </html>
